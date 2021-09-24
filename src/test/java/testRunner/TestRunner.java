@@ -9,7 +9,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 /**
- * This a Runner class and settled down the configuration for cucumber as the implementation of the ExtentReport
+ * This a Runner class and settled down the configuracion for cucumber as the implementation of the ExtentReport
  *
  * @author Alvaro Ariza
  */

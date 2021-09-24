@@ -12,21 +12,21 @@ Feature: Smoke Testing
   #one. Right now, I don’t care about departure port.
 
   @EXECUTE
-  Scenario: User see result are displayed in a grid.
+  Scenario: The result set is shown as a grid.
     Given User is  redirected to result page
     When user see result
     Then results are shown in a grid
 
 
   @EXECUTE
-  Scenario: User see results are filtered by price
+  Scenario: The results are filter by price
     Given results are shown
     When user use slider bar
     Then results varies in the range
 
 
   @EXECUTE
-  Scenario: User see result are sorted by price.
+  Scenario: The results are sorted by price.
     Given results are shown
     When The user clicks on "Sort By Price" button
     Then default value will be the cheapest
@@ -37,18 +37,23 @@ Feature: Smoke Testing
     #that I will get more info about itinerary
 
 #Not currently working, having some issues with the response time my machine
-  Scenario: User see itinerary page load
+  Scenario: The itinerary is loaded
     Given The user select a result from the list
     Then The user see "Itinerary" page loads
 
 
-  Scenario: User can read "About" page of each day.
+
+  Scenario: The about information is available.
     Given The user selects one of the cruises of the result set
     And The user is redirected towards the "Itinerary" page
     Then The information of each day is displayed when clicked.
 
 
-  Scenario: User see "BOOK NOW" button  in itinerary page.
+
+
+
+
+  Scenario: The "Book Now" button is shown.
     Given The user selects one of the cruises of the result set
     And The user is redirected towards the "Itinerary" page
     Then An "Book Now" button is  displayed.
